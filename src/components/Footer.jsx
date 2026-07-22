@@ -60,9 +60,9 @@ function Footer() {
 
           <p>📍 Pune, Maharashtra</p>
 
-          <p>📞 +91 7666507764</p>
+          <p>📞 +91 ****</p>
 
-          <p>✉ adityasawantofficial@gmail.com</p>
+          <p>✉ @gmail.com</p>
 
           <div className="social-icons">
 

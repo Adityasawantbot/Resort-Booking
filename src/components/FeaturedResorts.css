@@ -1,24 +1,42 @@
 .featured{
     padding:80px 0;
-    background:#fff;
+    background:#F8F5F0;
 }
 
-.resort-grid{
+.resorts-grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
-    gap:30px;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:35px;
+    justify-items:center;
+    margin-top:50px;
+}
+
+@media(max-width:1200px){
+    .resorts-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+@media(max-width:768px){
+    .resorts-grid{
+        grid-template-columns:1fr;
+    }
 }
 
 .resort-card{
-    background:#fff;
-    border-radius:15px;
+    width:100%;
+    max-width:360px;
+    background:#FCFAF7;
+    border:1px solid #E7DFD4;
+    border-radius:18px;
     overflow:hidden;
-    box-shadow:0 12px 25px rgba(0,0,0,.08);
-    transition:.3s;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:0.4s ease;
 }
 
 .resort-card:hover{
-    transform:translateY(-8px);
+    transform:translateY(-12px);
+    box-shadow:0 20px 45px rgba(0,0,0,.15);
 }
 
 .image-box{
@@ -31,28 +49,70 @@
     object-fit:cover;
 }
 
+/* Rating */
+
 .rating{
     position:absolute;
     top:15px;
     right:15px;
     background:#fff;
-    padding:8px 12px;
+    padding:8px 14px;
     border-radius:30px;
+    font-weight:600;
+    display:flex;
+    align-items:center;
+    gap:6px;
+}
+
+/* Wishlist */
+
+.wishlist{
+    position:absolute;
+    top:15px;
+    left:15px;
+    background:white;
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.wishlist:hover{
+    background:#C2A878;
+    color:white;
+}
+
+/* Discount Badge */
+
+.badge{
+    position:absolute;
+    bottom:15px;
+    left:15px;
+    background:#C2A878;
+    color:white;
+    padding:8px 14px;
+    border-radius:30px;
+    font-size:13px;
     font-weight:600;
 }
 
 .resort-content{
-    padding:20px;
+    padding:22px;
 }
 
 .resort-content h3{
-    margin-bottom:10px;
-    font-size:24px;
+    margin-bottom:12px;
+    font-size:28px;
+    color:#2D2A26;
 }
 
 .location{
-    color:#666;
-    margin-bottom:15px;
+    color:#6F6A63;
+    margin-bottom:18px;
 }
 
 .amenities{
@@ -63,10 +123,21 @@
 }
 
 .amenities span{
-    background:#F3F4F6;
+    background:#F1ECE5;
+    color:#2D2A26;
     padding:8px 14px;
     border-radius:30px;
     font-size:14px;
+}
+
+/* Guests and Rooms */
+
+.details{
+    display:flex;
+    justify-content:space-between;
+    color:#6F6A63;
+    margin-bottom:20px;
+    font-size:15px;
 }
 
 .bottom{
@@ -76,19 +147,25 @@
 }
 
 .bottom h4{
-    color:#0F766E;
+    color:#1F3A34;
+    font-size:26px;
+}
+
+.bottom small{
+    color:#6F6A63;
 }
 
 .bottom button{
-    background:#0F766E;
+    background:#1F3A34;
     color:white;
     border:none;
-    padding:12px 22px;
-    border-radius:8px;
+    padding:13px 24px;
+    border-radius:10px;
     cursor:pointer;
+    font-weight:600;
     transition:.3s;
 }
 
 .bottom button:hover{
-    background:#0B5E58;
+    background:#162B27;
 }

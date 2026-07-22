@@ -1,5 +1,13 @@
 import React from "react";
 import "./FeaturedResorts.css";
+import manali from "../assets/images/manali.jpg";
+import goa from "../assets/images/goa.jpg";
+import kerala from "../assets/images/kerala.jpg";
+import udaipur from "../assets/images/udaipur.jpg";
+import shimla from "../assets/images/shimla.jpg";
+import coorg from "../assets/images/coorg.jpg";
+import andaman from "../assets/images/andaman.jpg";
+import jaipur from "../assets/images/jaipur.jpg";
 
 const resorts = [
   {
@@ -8,8 +16,7 @@ const resorts = [
     location: "Manali, Himachal Pradesh",
     price: "₹6,500",
     rating: "4.8",
-    image:
-      "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=900&q=80",
+    image: manali,
     amenities: ["Pool", "Spa", "WiFi"],
   },
   {
@@ -18,8 +25,7 @@ const resorts = [
     location: "Goa",
     price: "₹8,200",
     rating: "4.9",
-    image:
-      "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=900&q=80",
+    image: goa,
     amenities: ["Beach", "Restaurant", "Bar"],
   },
   {
@@ -28,11 +34,57 @@ const resorts = [
     location: "Kerala",
     price: "₹5,900",
     rating: "4.7",
-    image:
-      "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=900&q=80",
+    image: kerala,
     amenities: ["Spa", "Nature", "Pool"],
   },
+  {
+    id: 4,
+    name: "Royal Lake Palace",
+    location: "Udaipur",
+    price: "₹9,500",
+    rating: "4.9",
+    image: udaipur,
+    amenities: ["Lake View", "Luxury", "Pool"],
+  },
+  {
+    id: 5,
+    name: "Himalayan Bliss Resort",
+    location: "Shimla",
+    price: "₹7,300",
+    rating: "4.8",
+    image: shimla,
+    amenities: ["Mountain", "Fireplace", "Spa"],
+  },
+  {
+    id: 6,
+    name: "Coorg Nature Retreat",
+    location: "Coorg",
+    price: "₹6,800",
+    rating: "4.8",
+    image: coorg,
+    amenities: ["Coffee Estate", "Pool", "Nature"],
+  },
+  {
+    id: 7,
+    name: "Sunrise Beach Resort",
+    location: "Andaman Islands",
+    price: "₹10,200",
+    rating: "4.9",
+    image: andaman,
+    amenities: ["Private Beach", "Diving", "Spa"],
+  },
+  {
+    id: 8,
+    name: "The Royal Heritage Resort",
+    location: "Jaipur",
+    price: "₹8,900",
+    rating: "4.7",
+    image: jaipur,
+    amenities: ["Heritage", "Restaurant", "Pool"],
+  },
 ];
+  
+
 
 function FeaturedResorts() {
   return (
@@ -47,7 +99,7 @@ function FeaturedResorts() {
           Handpicked luxury resorts for your next unforgettable vacation.
         </p>
 
-        <div className="resort-grid">
+        <div className="resorts-grid">
 
           {resorts.map((resort) => (
             <div className="resort-card" key={resort.id}>
