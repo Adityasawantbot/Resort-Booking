@@ -8,9 +8,9 @@ function Header() {
       <div className="container nav-container">
 
         {/* Logo */}
-        <div className="logo">
-          Resort<span>Book</span>
-        </div>
+        <h2 className="logo">
+    Reserv<span>o</span>
+</h2>
 
         {/* Navigation */}
         <nav className="navbar">

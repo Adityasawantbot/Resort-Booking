@@ -1,5 +1,6 @@
 import React from "react";
 import "./FeaturedResorts.css";
+import { FaHeart } from "react-icons/fa";
 import manali from "../assets/images/manali.jpg";
 import goa from "../assets/images/goa.jpg";
 import kerala from "../assets/images/kerala.jpg";
@@ -9,6 +10,7 @@ import coorg from "../assets/images/coorg.jpg";
 import andaman from "../assets/images/andaman.jpg";
 import jaipur from "../assets/images/jaipur.jpg";
 
+
 const resorts = [
   {
     id: 1,
@@ -16,6 +18,7 @@ const resorts = [
     location: "Manali, Himachal Pradesh",
     price: "₹6,500",
     rating: "4.8",
+    badge:"Best Seller",
     image: manali,
     amenities: ["Pool", "Spa", "WiFi"],
   },
@@ -25,6 +28,7 @@ const resorts = [
     location: "Goa",
     price: "₹8,200",
     rating: "4.9",
+    badge:"Luxury",
     image: goa,
     amenities: ["Beach", "Restaurant", "Bar"],
   },
@@ -34,6 +38,7 @@ const resorts = [
     location: "Kerala",
     price: "₹5,900",
     rating: "4.7",
+    badge:"Top Rated",
     image: kerala,
     amenities: ["Spa", "Nature", "Pool"],
   },
@@ -43,6 +48,7 @@ const resorts = [
     location: "Udaipur",
     price: "₹9,500",
     rating: "4.9",
+    badge:"Premium",
     image: udaipur,
     amenities: ["Lake View", "Luxury", "Pool"],
   },
@@ -52,6 +58,7 @@ const resorts = [
     location: "Shimla",
     price: "₹7,300",
     rating: "4.8",
+    badge:"Nature",
     image: shimla,
     amenities: ["Mountain", "Fireplace", "Spa"],
   },
@@ -61,6 +68,7 @@ const resorts = [
     location: "Coorg",
     price: "₹6,800",
     rating: "4.8",
+    badge:"Editor's Pick",
     image: coorg,
     amenities: ["Coffee Estate", "Pool", "Nature"],
   },
@@ -70,6 +78,7 @@ const resorts = [
     location: "Andaman Islands",
     price: "₹10,200",
     rating: "4.9",
+    badge:"Beachfront",
     image: andaman,
     amenities: ["Private Beach", "Diving", "Spa"],
   },
@@ -79,6 +88,7 @@ const resorts = [
     location: "Jaipur",
     price: "₹8,900",
     rating: "4.7",
+    badge:"Heritage",
     image: jaipur,
     amenities: ["Heritage", "Restaurant", "Pool"],
   },
@@ -105,9 +115,22 @@ function FeaturedResorts() {
             <div className="resort-card" key={resort.id}>
 
               <div className="image-box">
-                <img src={resort.image} alt={resort.name} />
-                <span className="rating">⭐ {resort.rating}</span>
-              </div>
+
+  <img src={resort.image} alt={resort.name} />
+
+  <span className="badge">
+    {resort.badge}
+  </span>
+
+  <span className="rating">
+    ⭐ {resort.rating}
+  </span>
+
+  <div className="wishlist">
+    <FaHeart />
+  </div>
+
+</div>
 
               <div className="resort-content">
 
@@ -128,12 +151,15 @@ function FeaturedResorts() {
                   <div>
                     <small>Starting From</small>
 
-                    <h4>{resort.price}/Night</h4>
+                    <h4>
+                         {resort.price}
+                         <span>/Night</span>
+                    </h4>
                   </div>
 
-                  <button>
-                    Book Now
-                  </button>
+                      <button className="book-btn">
+                          Book Now →
+                      </button>
 
                 </div>
 
