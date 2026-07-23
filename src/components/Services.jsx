@@ -6,56 +6,69 @@ const services = [
     id: 1,
     icon: "🏨",
     title: "Luxury Resorts",
-    description: "Experience premium stays with world-class hospitality."
+    description:
+      "Stay at handpicked luxury resorts with world-class hospitality and premium comfort.",
   },
   {
     id: 2,
     icon: "🏊",
-    title: "Swimming Pool",
-    description: "Relax and enjoy beautiful infinity and private pools."
+    title: "Infinity Pools",
+    description:
+      "Relax in stunning infinity pools overlooking mountains, lakes, and beaches.",
   },
   {
     id: 3,
     icon: "🍽️",
     title: "Fine Dining",
-    description: "Taste delicious cuisines prepared by expert chefs."
+    description:
+      "Enjoy gourmet cuisines crafted by award-winning chefs with breathtaking views.",
   },
   {
     id: 4,
     icon: "💆",
     title: "Spa & Wellness",
-    description: "Refresh your body and mind with luxury spa treatments."
+    description:
+      "Rejuvenate your body and mind with luxurious spa and wellness experiences.",
   },
   {
     id: 5,
-    icon: "🏕️",
-    title: "Adventure Camping",
-    description: "Enjoy outdoor adventures, trekking, and camping."
+    icon: "🚁",
+    title: "Private Experiences",
+    description:
+      "Book exclusive helicopter rides, yacht cruises, and personalized adventures.",
   },
   {
     id: 6,
     icon: "🎉",
     title: "Events & Weddings",
-    description: "Celebrate unforgettable weddings and special occasions."
-  }
+    description:
+      "Celebrate weddings, anniversaries, and corporate events at stunning venues.",
+  },
 ];
 
 function Services() {
   return (
     <section className="services">
+
       <div className="container">
 
+        <span className="section-tag">
+          Premium Experiences
+        </span>
+
         <h2 className="section-title">
-          Our Services
+          Luxury Services Designed For You
         </h2>
 
         <p className="section-subtitle">
-          We provide everything you need for a perfect holiday experience.
+          From luxury stays to unforgettable experiences, Reservo offers
+          everything needed for a perfect vacation.
         </p>
 
         <div className="services-grid">
 
           {services.map((service) => (
+
             <div className="service-card" key={service.id}>
 
               <div className="service-icon">
@@ -66,12 +79,18 @@ function Services() {
 
               <p>{service.description}</p>
 
+              <button className="service-btn">
+                Learn More →
+              </button>
+
             </div>
+
           ))}
 
         </div>
 
       </div>
+
     </section>
   );
 }

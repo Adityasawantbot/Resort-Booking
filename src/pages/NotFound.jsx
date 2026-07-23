@@ -8,16 +8,24 @@ function NotFound() {
 
       <div className="container">
 
-        <h1>404</h1>
+        <span className="section-tag">
+          Error 404
+        </span>
 
-        <h2>Page Not Found</h2>
+        <h1>Oops!</h1>
+
+        <h2>
+          This Page Doesn't Exist
+        </h2>
 
         <p>
-          Sorry, the page you're looking for doesn't exist or has been moved.
+          The page you're looking for may have been moved, deleted,
+          or never existed. Let's get you back to exploring luxury
+          destinations.
         </p>
 
         <Link to="/" className="home-btn">
-          Back to Home
+          ← Back to Home
         </Link>
 
       </div>

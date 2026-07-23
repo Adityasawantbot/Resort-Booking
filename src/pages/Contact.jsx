@@ -4,61 +4,103 @@ import "./Contact.css";
 function Contact() {
   return (
     <>
-      {/* Hero Section */}
+      {/* Hero */}
 
       <section className="contact-hero">
 
         <div className="container">
 
-          <h1>Contact Us</h1>
+          <span className="section-tag">
+            Contact Reservo
+          </span>
+
+          <h1>
+            We'd Love <br /> To Hear From You
+          </h1>
 
           <p>
-            We'd love to hear from you. Get in touch with our team anytime.
+            Whether you're planning your next luxury vacation or need booking
+            assistance, our travel experts are always ready to help.
           </p>
 
         </div>
 
       </section>
 
-      {/* Contact Section */}
+      {/* Contact */}
 
       <section className="contact">
 
         <div className="container contact-grid">
 
-          {/* Left Side */}
+          {/* Left */}
 
           <div className="contact-info">
 
-            <h2>Get In Touch</h2>
+            <span className="small-title">
+              GET IN TOUCH
+            </span>
+
+            <h2>
+              Let's Plan Your Next Luxury Escape
+            </h2>
 
             <p>
-              Have questions about bookings or resorts? Our support team is
-              always ready to help.
+              Have questions about bookings, resorts, or special offers?
+              Our friendly team is available 24/7 to assist you.
             </p>
 
-            <div className="info-box">
-              <h4>📍 Address</h4>
-              <p>Pune, Maharashtra, India</p>
+            <div className="info-card">
+
+              <div className="info-icon">📍</div>
+
+              <div>
+
+                <h4>Office</h4>
+
+                <p>Pune, Maharashtra, India</p>
+
+              </div>
+
             </div>
 
-            <div className="info-box">
-              <h4>📞 Phone</h4>
-              <p>+91 9876543210</p>
+            <div className="info-card">
+
+              <div className="info-icon">📞</div>
+
+              <div>
+
+                <h4>Phone</h4>
+
+                <p>+91 98765 43210</p>
+
+              </div>
+
             </div>
 
-            <div className="info-box">
-              <h4>✉ Email</h4>
-              <p>support@resortbook.com</p>
+            <div className="info-card">
+
+              <div className="info-icon">✉</div>
+
+              <div>
+
+                <h4>Email</h4>
+
+                <p>support@reservo.com</p>
+
+              </div>
+
             </div>
 
           </div>
 
-          {/* Right Side */}
+          {/* Right */}
 
           <div className="contact-form">
 
-            <h2>Send Message</h2>
+            <h2>
+              Send a Message
+            </h2>
 
             <form>
 
@@ -79,7 +121,7 @@ function Contact() {
 
               <textarea
                 rows="6"
-                placeholder="Write your message..."
+                placeholder="Tell us how we can help..."
               ></textarea>
 
               <button type="submit">
@@ -94,15 +136,23 @@ function Contact() {
 
       </section>
 
-      {/* Google Map */}
+      {/* Map */}
 
       <section className="map">
 
         <div className="container">
 
+          <span className="section-tag">
+            Visit Us
+          </span>
+
           <h2 className="section-title">
-            Our Location
+            Our Office Location
           </h2>
+
+          <p className="section-subtitle">
+            Feel free to visit or schedule a meeting with our travel consultants.
+          </p>
 
           <iframe
             title="Google Map"

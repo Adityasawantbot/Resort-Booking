@@ -9,16 +9,29 @@ function Footer() {
 
         {/* Company */}
 
-        <div className="footer-column">
+        <div className="footer-column company">
 
           <h2 className="footer-logo">
-            Resort<span>Book</span>
+            Reserv<span>o</span>
           </h2>
 
           <p>
-            Discover premium resorts, luxury stays, and unforgettable travel
-            experiences across India.
+            Discover India's finest luxury resorts, boutique stays, and
+            unforgettable travel experiences. Your perfect vacation starts
+            with Reservo.
           </p>
+
+          <div className="social-icons">
+
+            <a href="#">🌐</a>
+
+            <a href="#">📘</a>
+
+            <a href="#">📷</a>
+
+            <a href="#">▶️</a>
+
+          </div>
 
         </div>
 
@@ -29,25 +42,39 @@ function Footer() {
           <h3>Quick Links</h3>
 
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Resorts</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">FAQ</a></li>
+
+            <li><a href="/">Home</a></li>
+
+            <li><a href="/">Destinations</a></li>
+
+            <li><a href="/">Resorts</a></li>
+
+            <li><a href="/about">About</a></li>
+
+            <li><a href="/contact">Contact</a></li>
+
           </ul>
 
         </div>
 
-        {/* Policies */}
+        {/* Services */}
 
         <div className="footer-column">
 
-          <h3>Policies</h3>
+          <h3>Our Services</h3>
 
           <ul>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms & Conditions</a></li>
-            <li><a href="#">Refund Policy</a></li>
+
+            <li><a href="#">Luxury Resorts</a></li>
+
+            <li><a href="#">Spa & Wellness</a></li>
+
+            <li><a href="#">Private Villas</a></li>
+
+            <li><a href="#">Wedding Events</a></li>
+
+            <li><a href="#">Travel Packages</a></li>
+
           </ul>
 
         </div>
@@ -56,25 +83,15 @@ function Footer() {
 
         <div className="footer-column">
 
-          <h3>Contact</h3>
+          <h3>Contact Us</h3>
 
-          <p>📍 Pune, Maharashtra</p>
+          <p>📍 Pune, Maharashtra, India</p>
 
-          <p>📞 +91 ****</p>
+          <p>📞 +91 98765 *****</p>
 
-          <p>✉ @gmail.com</p>
+          <p>✉ contact@res.com</p>
 
-          <div className="social-icons">
-
-            <a href="#">🌐</a>
-
-            <a href="#">📘</a>
-
-            <a href="#">📷</a>
-
-            <a href="#">▶</a>
-
-          </div>
+          <p>🕒 Mon - Sat : 9 AM - 7 PM</p>
 
         </div>
 
@@ -82,7 +99,9 @@ function Footer() {
 
       <div className="footer-bottom">
 
-        © 2026 ResortBook. All Rights Reserved.
+        <p>
+          © 2026 <strong>Reservo</strong>. All Rights Reserved.
+        </p>
 
       </div>
 
